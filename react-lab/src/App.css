@@ -1,0 +1,131 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.container {
+  padding: 2rem 0;
+}
+
+/* Centrado de todos los bloques */
+form,
+.user-list,
+#profile {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  background-color: #2b2b2b;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Estructura del formulario */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Inputs y campos */
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #3b3b3b;
+  color: white;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: both;
+  min-height: 80px;
+  min-width: 100%;
+}
+
+/* Radios y checkboxes en línea */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Botones */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4c8eda;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: #3c7ac0;
+}
+
+/* Tabla de usuarios */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2b2b2b;
+}
+
+th,
+td {
+  border: 1px solid #444;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  background-color: #383838;
+}
+
+form h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+form {
+  margin-left: 12vw;
+}
+
+.user-list,
+#profile {
+  margin-left: 12vw;
+}
